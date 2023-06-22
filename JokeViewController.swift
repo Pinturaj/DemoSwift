@@ -54,7 +54,7 @@ class JokeViewController: UIViewController {
     }
     
     func startJokeFetchingTimer() {
-        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] (_) in
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] (_) in
             self?.fetchJoke()
         }.fire()
     }
